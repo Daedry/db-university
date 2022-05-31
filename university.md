@@ -12,7 +12,7 @@
 - freshman :                                    VARCHAR(30) NOT NULL
 - email :                                          VARCHAR(60) NOT NULL
 - date :                                            DATETIME NOT NULL
-- address :                                       VARCHAR(50) NOT NULL
+- address :                                       VARCHAR(50) NULL
 - country :                                       VARCHAR(50) NULL
 - phone_number :                           VARCHAR(50) NOT NULL
 - documentation :                           VARCHAR(50) NOT NULL
@@ -29,7 +29,7 @@
 - name :                                          VARCHAR(40) NOT NULL
 - lastname :                                     VARCHAR(40) NOT NULL
 - email :                                           VARCHAR(60) NOT NULL
-- date :                                            DATETIME NOT NULL          
+- date :                                            DATETIME NULL          
 - phone_number :                           VARCHAR(50) NULL
 - ?course_id? :
 - ?exam_id? :
@@ -44,7 +44,7 @@
 - website :                                     VARCHAR(50) NOT NULL
 - ?degree_courses_id? :
 
-## DEGREE_COURSES
+## DEGREE_COURSE
 
 - id :                                              PK NOT NULL UNIQUE INDEX
 - name :                                        VARCHAR(40) NOT NULL
@@ -52,13 +52,12 @@
 - year :                                          YEAR NOT NULL
 - principal_subject :                      VARCHAR(100) NOT NULL            
 - description :                               TEXT NOT NULL
-- credits :                                       TINYINT NOT NULL
 - closed_number :                         TINYINT NOT NULL
 - website :                                     VARCHAR(50) NOT NULL
 - ?department_id? :
 - ?teacher_id? :
 
-## COURSES
+## COURSE
 
 - id :                                              PK NOT NULL UNIQUE INDEX
 - name :                                        VARCHAR(40) NOT NULL
@@ -83,7 +82,7 @@
 
 - ?courses_id? :
 
-## EXAM
+## EXAMS
 
 - id :                                                    PK NOT NULL UNIQUE INDEX
 - name :                                              VARCHAR(40) NOT NULL
@@ -101,5 +100,7 @@
 - subject :                                         VARCHAR(40) NOT NULL
 - vote :                                              TINYINT NOT NULL
 - date :                                               DATETIME NOT NULL
+- credits :                                            TINYINT NOT NULL
+- code :                                               TINYINT NOT NULL
 - ?courses_id? :    
 - ?teacher_id? :
