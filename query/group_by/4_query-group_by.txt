@@ -1,0 +1,91 @@
+
+
+
+##               4. Contare quanti corsi di laurea ci sono per ogni dipartimento             ##
+
+
+mysql> SELECT `name` AS `degree_course`, COUNT(`department_id`) AS `department_id`
+    -> FROM `degrees`
+    -> GROUP BY `degree_course`;
++----------------------------------------------------------------------------------------------------+---------------+
+| degree_course                                                                                      | department_id |
++----------------------------------------------------------------------------------------------------+---------------+
+| Corso di Laurea in Astronomia                                                                      |             1 |
+| Corso di Laurea in Biologia                                                                        |             1 |
+| Corso di Laurea in Biologia molecolare                                                             |             1 |
+| Corso di Laurea in Biotecnologie                                                                   |             1 |
+| Corso di Laurea in Chimica                                                                         |             1 |
+| Corso di Laurea in Chimica Industriale                                                             |             1 |
+| Corso di Laurea in Dietistica                                                                      |             1 |
+| Corso di Laurea in Diritto dell'Economia                                                           |             1 |
+| Corso di Laurea in Economia                                                                        |             1 |
+| Corso di Laurea in Educazione Professionale                                                        |             1 |
+| Corso di Laurea in Fisica                                                                          |             1 |
+| Corso di Laurea in Fisioterapia                                                                    |             1 |
+| Corso di Laurea in Igiene Dentale                                                                  |             1 |
+| Corso di Laurea in Infermieristica                                                                 |             1 |
+| Corso di Laurea in Informatica                                                                     |             1 |
+| Corso di Laurea in Ingegneria Biomedica                                                            |             1 |
+| Corso di Laurea in Ingegneria Civile                                                               |             1 |
+| Corso di Laurea in Ingegneria dell'Informazione                                                    |             1 |
+| Corso di Laurea in Ingegneria Edile - Architettura                                                 |             1 |
+| Corso di Laurea in Ingegneria Elettronica                                                          |             1 |
+| Corso di Laurea in Ingegneria Informatica                                                          |             1 |
+| Corso di Laurea in Ingegneria per l'Ambiente e il Territorio                                       |             1 |
+| Corso di Laurea in Lettere                                                                         |             1 |
+| Corso di Laurea in Lingue, Letterature e Mediazione Culturale                                      |             1 |
+| Corso di Laurea in Logopedia                                                                       |             1 |
+| Corso di Laurea in Matematica                                                                      |             1 |
+| Corso di Laurea in Relazioni Internazionali e Diritti Umani                                        |             1 |
+| Corso di Laurea in Scienza dei Materiali                                                           |             1 |
+| Corso di Laurea in Scienze e Tecnologie per l'Ambiente                                             |             1 |
+| Corso di Laurea in Scienze naturali                                                                |             1 |
+| Corso di Laurea in Scienze Politiche                                                               |             1 |
+| Corso di Laurea in Statistica per l'Economia e l'Impresa                                           |             1 |
+| Corso di Laurea in Statistica per le Tecnologie e le Scienze                                       |             1 |
+| Corso di Laurea in Tecnica della Riabilitazione Psichiatrica                                       |             1 |
+| Corso di Laurea in Tecniche di Laboratorio Biomedico                                               |             1 |
+| Corso di Laurea in Tecniche di Neurofisiopatologia                                                 |             1 |
+| Corso di Laurea in Tecniche di Radiologia Medica                                                   |             1 |
+| Corso di Laurea Magistrale in Astronomia                                                           |             1 |
+| Corso di Laurea Magistrale in Bioingegneria                                                        |             1 |
+| Corso di Laurea Magistrale in Biologia evoluzionistica                                             |             1 |
+| Corso di Laurea Magistrale in Biologia marina                                                      |             1 |
+| Corso di Laurea Magistrale in Biologia molecolare                                                  |             1 |
+| Corso di Laurea Magistrale in Biologia sanitaria                                                   |             1 |
+| Corso di Laurea Magistrale in Biotecnologie industriali                                            |             1 |
+| Corso di Laurea Magistrale in Business Administration                                              |             1 |
+| Corso di Laurea Magistrale in Chimica                                                              |             1 |
+| Corso di Laurea Magistrale in Chimica Industriale                                                  |             1 |
+| Corso di Laurea Magistrale in Cybersecurity                                                        |             1 |
+| Corso di Laurea Magistrale in Economia e Diritto                                                   |             1 |
+| Corso di Laurea Magistrale in Economics and Finance                                                |             1 |
+| Corso di Laurea Magistrale in Entrepreneurship and Innovation                                      |             1 |
+| Corso di Laurea Magistrale in European and Global Studies                                          |             1 |
+| Corso di Laurea Magistrale in Filologia Moderna                                                    |             1 |
+| Corso di Laurea Magistrale in Fisica                                                               |             1 |
+| Corso di Laurea Magistrale in Human Rights and Multi-Level Governance                              |             1 |
+| Corso di Laurea Magistrale in Informatica                                                          |             1 |
+| Corso di Laurea Magistrale in Ingegneria Civile                                                    |             1 |
+| Corso di Laurea Magistrale in Ingegneria dell'Automazione                                          |             1 |
+| Corso di Laurea Magistrale in Ingegneria Elettronica                                               |             1 |
+| Corso di Laurea Magistrale in Ingegneria Informatica                                               |             1 |
+| Corso di Laurea Magistrale in Innovazione e Servizio Sociale                                       |             1 |
+| Corso di Laurea Magistrale in Lingue e Letterature Europee e Americane                             |             1 |
+| Corso di Laurea Magistrale in Lingue Moderne per la Comunicazione e la Cooperazione Internazionale |             1 |
+| Corso di Laurea Magistrale in Linguistica                                                          |             1 |
+| Corso di Laurea Magistrale in Matematica                                                           |             1 |
+| Corso di Laurea Magistrale in Odontoiatria e Protesi Dentaria                                      |             1 |
+| Corso di Laurea Magistrale in Relazioni Internazionali e Diplomazia                                |             1 |
+| Corso di Laurea Magistrale in Scienza dei Materiali                                                |             1 |
+| Corso di Laurea Magistrale in Scienze del Governo e Politiche Pubbliche                            |             1 |
+| Corso di Laurea Magistrale in Scienze della natura                                                 |             1 |
+| Corso di Laurea Magistrale in Scienze delle Professioni Sanitarie                                  |             1 |
+| Corso di Laurea Magistrale in Scienze e Tecniche dell'Attività Motoria Preventiva e Adattata       |             1 |
+| Corso di Laurea Magistrale in Scienze e Tecnologie per l'Ambiente                                  |             1 |
+| Corso di Laurea Magistrale in Scienze Statistiche                                                  |             1 |
+| Corso di Laurea Magistrale in Strategie di Comunicazione                                           |             1 |
++----------------------------------------------------------------------------------------------------+---------------+
+75 rows in set (0.00 sec)
+
+mysql>
