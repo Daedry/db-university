@@ -1,7 +1,7 @@
 
 
 
-##               1. Calcolare la media dei voti di ogni appello d'esame             ##
+##               3. Calcolare la media dei voti di ogni appello d'esame             ##
 
 
 mysql> SELECT AVG(`vote`) AS `vote_avarage`, `exam_id` AS `exam_session_id`
