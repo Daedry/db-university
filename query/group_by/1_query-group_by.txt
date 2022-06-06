@@ -1,0 +1,20 @@
+
+
+
+##               1. Contare quanti iscritti ci sono stati ogni anno               ##
+
+
+mysql> SELECT COUNT(*) AS `numero_iscritti`, YEAR(`enrolment_date`) AS `anno`
+    -> FROM `students`
+    -> GROUP BY `anno`;
++-----------------+------+
+| numero_iscritti | anno |
++-----------------+------+
+|             912 | 2018 |
+|            1709 | 2019 |
+|            1645 | 2020 |
+|             734 | 2021 |
++-----------------+------+
+4 rows in set (0.01 sec)
+
+mysql>
