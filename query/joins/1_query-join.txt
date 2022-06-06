@@ -1,0 +1,20 @@
+
+
+
+##               1. Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia               ##
+
+
+
+mysql> SELECT `students`.`id` AS `student_id` , `students`.`name`, `students`.`surname`, `degrees`.`id` AS `degree_id`, `degrees`.`name`
+    -> FROM `students`
+    -> JOIN `degrees` ON `degrees`.`id` = `students`.`id`
+    -> WHERE `degrees`.`name` = "Corso di Laurea in Economia";
++------------+--------+---------+-----------+-----------------------------+
+| student_id | name   | surname | degree_id | name                        |
++------------+--------+---------+-----------+-----------------------------+
+|         53 | Gavino | Greco   |        53 | Corso di Laurea in Economia |
++------------+--------+---------+-----------+-----------------------------+
+1 row in set (0.00 sec)
+
+mysql>
+
